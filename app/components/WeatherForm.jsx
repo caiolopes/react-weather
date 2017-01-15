@@ -32,7 +32,7 @@ export default class WeatherForm extends React.Component {
             onChange={this.handleChange.bind(this)}/>
         </div>
         <div>
-          <button type="submit">Get Weather</button>
+          <button className="button expanded hollow" type="submit">Get Weather</button>
         </div>
       </form>
     );
