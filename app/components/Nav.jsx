@@ -39,7 +39,7 @@ class Nav extends Component {
         <div className="top-bar-right">
           <form onSubmit={this.onSearch}>
             <ul className="menu">
-              <li><input type="search" placeholder="Search weather"/></li>
+              <li><input type="search" placeholder="Search weather by city"/></li>
               <li><button type="submit" className="button">Get Weather</button></li>
             </ul>
           </form>

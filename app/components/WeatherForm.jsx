@@ -26,8 +26,9 @@ export default class WeatherForm extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <div>
           <input
-            type="text"
+            type="search"
             name="location"
+            placeholder="Search weather by city"
             value={this.state.location}
             onChange={this.handleChange.bind(this)}/>
         </div>
