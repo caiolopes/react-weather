@@ -7,8 +7,8 @@ const Examples = (props) => {
       <h1 className="text-center">Examples</h1>
       <p>Here are a few example locations to try out</p>
       <ol>
-        <li><Link to="/?location=Salvador">Salvador, BA</Link></li>
-        <li><Link to="/?location=Rio">Rio, Brazil</Link></li>
+        <li><Link to="/?location=Salvador">Salvador, BA, BR</Link></li>
+        <li><Link to="/?location=Rio">Rio de Janeiro, RJ, BR</Link></li>
       </ol>
     </div>
   );

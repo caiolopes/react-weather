@@ -8,11 +8,18 @@ import React from 'react';
 //   }
 // }
 
+// Stateless Functional Component
 const About = (props) => {
   return (
     <div>
-      <h3>About</h3>
-      <p>Welcome to the about page!</p>
+      <h1 className="text-center">About</h1>
+      <p>This is a weather application build on React.</p>
+      <p>I have built this for The Complete React Web App Developer Course.</p>
+      <p>Here are some of the tools I used:</p>
+      <ul>
+        <li>React</li>
+        <li>Open Weather Map</li>
+      </ul>
     </div>
   );
 }
