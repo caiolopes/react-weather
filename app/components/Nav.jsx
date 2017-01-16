@@ -8,7 +8,11 @@ class Nav extends Component {
   }
   onSearch(e) {
     e.preventDefault();
-    alert('Not yet wired up');
+    const location = encodeURIComponent(this.refs.city.value);
+    if (location.length > 0) {
+      this.refs.city.value = "";
+      window.location.hash = '#/?location=' + location;
+    }
   }
   render() {
     return (
@@ -39,7 +43,12 @@ class Nav extends Component {
         <div className="top-bar-right">
           <form onSubmit={this.onSearch}>
             <ul className="menu">
-              <li><input type="search" placeholder="Search weather by city"/></li>
+              <li>
+                <input
+                  type="search"
+                  placeholder="Search weather by city"
+                  ref="city"/>
+              </li>
               <li><button type="submit" className="button">Get Weather</button></li>
             </ul>
           </form>
